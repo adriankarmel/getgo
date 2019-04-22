@@ -40,6 +40,20 @@
 			  color:#FFFF33;
 			}		
 			
+			.map-responsive{
+			    overflow:hidden;
+			    padding-bottom:56.25%;
+			    position:relative;
+			    height:0;
+			}
+			
+			.map-responsive iframe{
+			    left:0;
+			    top:0;
+			    height:100%;
+			    width:100%;
+			    position:absolute;
+			}
 		</style>
     </head>	
 	
@@ -56,7 +70,7 @@
 		        <a class="nav-link" href="search.html">Search <span class="sr-only">(current)</span></a>
 		      </li>   
 		      <li class="nav-item">
-		        <a class="nav-link" href="product.html">Products</a>
+		        <a class="nav-link" href="products.html">Products</a>
 		      </li>		  
 		      <li class="nav-item">
 		        <a class="nav-link" href="notification.html">Notification</a>
@@ -68,23 +82,37 @@
 		<div class="container">
 			<h2 class="titulo">Products</h2>
 			<hr>
-			 <div class="row" align="center">
-       			 <div class="col-md-4">
-      			      <img src="chair.jpg" class="rounded-circle" height="250" width="250" />
-      			 	  <small id="productHelp" class="form-text text-muted">Address: 24 The Links Rd.</small>
-      			 	  <small id="productHelp" class="form-text text-muted">Product: Red Chair</small>	
+			 
+			 <div class="row" align="left">
+			 	 <div class="col-md-12">
+       			 	  <h3 class="form-text text-muted"> Address: 24 The Links Rd.</h3>
+      			 	  <h3 class="form-text text-muted">Product: Red Chair</h3>	
+			 	</div>
+			 </div>
+			 <div class="row" align="">
+       			 <div class="col-md-3">
+      			   	<img src="chair.jpg" class="rounded-circle" height="250" width="250" />
       			 </div>
-      			 <div class="col-md-4">
-      			      <img src="couch.jpg" class="rounded-circle" height="250" width="250" />
-       			 	  <small id="productHelp" class="form-text text-muted">Address: 24 The Links Rd.</small>
-      			 	  <small id="productHelp" class="form-text text-muted">Product: Couch black</small>	
-      			  </div>
-      			  <div class="col-md-4"> 
-      			      <img src="laundry.jpg" class="rounded-circle" height="250" width="250" />
-        			  <small id="productHelp" class="form-text text-muted">Address: 24 The Links Rd.</small>
-      			 	  <small id="productHelp" class="form-text text-muted">Product: Laundry Machine</small>	
-      			  </div>      			
-		    </div>				
-		</div>
+      			 
+     			 <div class="col-md-9">
+	      			<div class="map-responsive">		      			
+	      				<div class="mapouter">
+	      					<div class=".map-responsive">
+	      						<iframe width="600" 
+	      								height="500" 
+	      								id="gmap_canvas" 
+	      								src="https://maps.google.com/maps?q=24%20the%20links%20rd&t=&z=13&ie=UTF8&iwloc=&output=embed" 
+	      								frameborder="0" 
+	      								scrolling="no" 
+	      								marginheight="0" 
+	      								marginwidth="0">
+	      						</iframe>Google Maps Generator by 
+	      					</div>
+	      				</div>
+					</div> 
+			 </div>      			     			
+	    </div>				
+	</div>
+
 	</body>
 </html>
