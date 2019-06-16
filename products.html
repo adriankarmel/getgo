@@ -8,16 +8,16 @@
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script>
-		$(document).ready(function(){
-			$("#search1").click(function(){
-				console.log("ddd");
-				$.getJSON("product.js", function(result){
-					$.each(result, function(i, field){
-						$("div").append(field + " ");
+			$(document).ready(function(){
+				$("#search1").click(function(){
+					console.log("ddd");
+					$.getJSON("product.js", function(result){
+						$.each(result, function(i, field){
+							$("div").append(field + " ");
+						});
 					});
 				});
-			});
-		});	
+			});	
 		</script>
 		<style>
 		
@@ -97,23 +97,60 @@
        			 	  <a href="product.html">	
       			    	  <img src="chair.jpg" class="rounded-circle" height="250" width="250" />
       			 	  </a>
-      			 	  <small id="productHelp" class="form-text text-muted">Address: 24 The Links Rd.</small>
-      			 	  <small id="productHelp" class="form-text text-muted">Product: Red Chair</small>	
+      			      <table class="table">	
+      				   	<tr>
+				    	 	<td><small><strong>Description</strong></small></td>
+				   			<td><small>Chair red</small></td>
+				   	    </tr>
+				     	<tr> 
+				     		<td scope="col"><small><strong>Address</strong></small></td>
+				      		<td scope="col"><small>24 The Links Rd, Toronto, On M2P</small>
+				      	</tr>
+				      	<tr>
+				     		 <td scope="col"><small><strong>Price</strong></small></td>	
+				     		 <td><small>CDN$ 18.00</small></td>				    
+				    	</tr>						  				 
+					</table>  
       			 </div>
       			 <div class="col-md-4">
-      			      <a href="product.html">
+      			      <a href="producttwo.html">
       			      		<img src="couch.jpg" class="rounded-circle" height="250" width="250" />
        			 	  </a>
-       			 	  <small id="productHelp" class="form-text text-muted">Address: 24 The Links Rd.</small>
-      			 	  <small id="productHelp" class="form-text text-muted">Product: Couch black</small>	
+       			  	  <table class="table">	
+      				   	<tr>
+				    	 	<td><small><strong>Description</strong></small></td>
+				   			<td><small>Couch Black</small></td>
+				   	    </tr>
+				     	<tr> 
+				     		<td scope="col"><small><strong>Address</strong></small></td>
+				      		<td scope="col"><small>27 King's College Cir, Toronto, ON M5S</small>
+				      	</tr>
+				      	<tr>
+				     		 <td scope="col"><small><strong>Price</strong></small></td>	
+				     		 <td><small>CDN$ 65.50</small></td>				    
+				    	</tr>						  				 
+					</table>        		
       			  </div>
       			  <div class="col-md-4"> 
-      			      <a href="#">
+      			      <a href="productthree.html">
       			      		<img src="laundry.jpg" class="rounded-circle" height="250" width="250" />
       			   	  </a>
-        			  <small id="productHelp" class="form-text text-muted">Address: 24 The Links Rd.</small>
-      			 	  <small id="productHelp" class="form-text text-muted">Product: Laundry Machine</small>	
-      			  </div>      			
+      			   	  
+      			   	  <table class="table">	
+      				   	<tr>
+				    	 	<td><small><strong>Description</strong></small></td>
+				   			<td><small>Laundry Machine</small></td>
+				   	    </tr>
+				     	<tr> 
+				     		<td scope="col"><small><strong>Address</strong></small></td>
+				      		<td scope="col"><small>14333 Yonge St, Richmond Hill, ON L4E 1A2</small>
+				      	</tr>
+				      	<tr>
+				     		 <td scope="col"><small><strong>Price</strong></small></td>	
+				     		 <td><small>CDN$ 74.00</small></td>				    
+				    	</tr>						  				 
+					</table>  
+      			 </div>
 		    </div>				
 		</div>
 	</body>
